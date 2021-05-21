@@ -1,0 +1,148 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,.7),rgba(4,9,30,.7)),url(./eduford_img/eduford_img/DSC_0349.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav
+{
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img
+{
+    width: 80px;
+}
+
+.links
+{
+    flex: 1;
+    text-align: right;
+}
+
+.links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+
+.links ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.links ul li a::after
+{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(148, 221, 243);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.links ul li a:hover::after{
+    width: 100%;
+}
+
+.text-box
+{
+    width: 80%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.text-box h1
+{
+    font-size: 65px;
+}
+
+.text-box p
+{
+    margin: 10px 0 40px;
+}
+
+.know-btn
+{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 10px;
+    background: transparent;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+
+}
+.know-btn:hover
+{
+    background: rgb(1, 90, 126);
+}
+
+.education
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.education::before
+{
+    content: "";
+    width: 20%;
+    background:linear-gradient(20deg,skyblue,rgb(0, 247, 255));
+    
+    height: 2px;
+    margin: auto;
+    display: block;
+}
+.education h1::after
+{
+    content: "";
+    width: 20%;
+    background:linear-gradient(20deg,skyblue,rgb(0, 247, 255));
+    height: 2px;
+    margin: auto;
+    display: block;
+}
+
+.row
+{
+    
+    margin-top:5%;
+    justify-content: space-between;
+}
+
+.edu-col1
+{
+    flex-basis: 52%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 12px 15px;
+    box-sizing: border-box;
+}
